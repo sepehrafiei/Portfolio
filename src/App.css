@@ -33,7 +33,6 @@ body {
 }
 
 #root {
-    /* display: flex; */
     flex-direction: column;
     gap: 60px;
 }
@@ -58,15 +57,15 @@ h3 {
 
 h1 {
     font-family: 'Rubik', sans-serif;
-    font-size: 3.7vw;
+    font-size: 3vw;
 }
 
 h2 {
-    font-size: 2vw;
+    font-size: 1.8vw;
 }
 
 p, li{
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     font-weight: 300;
 
 }

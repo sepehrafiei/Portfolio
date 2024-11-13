@@ -12,7 +12,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 2vh;
+    gap: 2vw;
 }
 
 .info > * {
@@ -27,31 +27,31 @@
 }
 
 .hero {
-  width: 28vw;
-  height: 28vw
+  width: 26vw;
+  height: 26vw
 }
 
 
 .colorMode {
     
-    width: 3vw;
-    height:3vw;
+    width: 2.5vw;
+    height:2.5vw;
 }
 
 .socials > a > img {
-    width: 3.5vw;
-    height: 3.5vw;
+    width: 3vw;
+    height: 3vw;
 }
 
 .socials {
     display: flex;
-    gap: 1.4vw;
+    gap: 1.6vw;
 }
 
 
 .typingContainer {
     font-family: monospace;
-    font-size: 2em;
+    font-size: 2vw;
     white-space: nowrap;
     overflow: hidden;
     display: flex;
@@ -69,7 +69,7 @@
   .wrapper {
     display: grid;
     place-items: center;
-    height: 100px;
+
   }
   
 

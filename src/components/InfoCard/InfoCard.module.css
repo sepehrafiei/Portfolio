@@ -71,19 +71,19 @@
 }
 
 .card h1 {
-    font-size: 2vw;
+    font-size: 1.6vw;
     color: var(--text-color);
 }
 
 .card h2 {
-    font-size: 1.2vw;
+    font-size: 1vw;
     color: var(--text-color);
 }
 
 
 
 .card p {
-    font-size: 1.2vw;
+    font-size: 1vw;
     color: var(--text-color);
     font-family: "Suisse Int'l", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
