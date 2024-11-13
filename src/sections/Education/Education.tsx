@@ -1,9 +1,6 @@
 import styles from './EducationStyles.module.css';
 import camp from '../../assets/camp.png';
-// import {useTheme} from '../../common/ThemeContext';
 function Education() {
-    // const {theme, toggleTheme} = useTheme();
-    // const themeIcon = theme === 'light' ? sun : moon;
   return (
     <section id="education" className={styles.container}>
         <div className={styles.title}>
@@ -28,7 +25,6 @@ function Education() {
                 <p>AI/ML: Machine Learning, Deep Learning for Visual Data, Designing Deep Neural Networks, Artificial Intelligence, Foundations of Data Science, Discrete Mathematics and Probability Theory</p>
             </div>
             <div className={styles.BerkeleyLogo}>
-                {/* <img className={styles.oski} src={oski} alt="Berkeley Engineering" width="250px"/> */}
                 <img className={styles.camp} src={camp} alt="" width="160px"/>
             </div>
          

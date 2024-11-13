@@ -1,14 +1,14 @@
 import styles from './ProjectsStyles.module.css';
 import Project from '../../components/ProjectCard/ProjectCard'
-import React, { useState } from 'react';
+import { useState } from 'react';
 import right_dark from '../../assets/arrow-right-dark.svg';
 import right_light from '../../assets/arrow-right-light.svg';
 import left_dark from '../../assets/arrow-left-dark.svg';
 import left_light from '../../assets/arrow-left-light.svg';
 import { useTheme } from '../../common/ThemeContext';
-import tweet from '../../assets/tweet.png'
+
 function Projects() {
-    const { theme, toggleTheme } = useTheme();
+    const { theme } = useTheme();
     const left = theme === 'light' ?  left_light : left_dark;
     const right = theme === 'light' ? right_light : right_dark;
 
@@ -141,7 +141,7 @@ function Projects() {
             <h1><div className={styles.underline}>Projects</div></h1>
         </div>
         <div className={styles.content}>
-        <img src={left} onClick={nextElement}/>
+        <img src={left} onClick={prevElement}/>
         {elements[(currentIndex- 1 + elements.length) % elements.length]}
         {elements[currentIndex]}
         {elements[(currentIndex + 1) % elements.length]}

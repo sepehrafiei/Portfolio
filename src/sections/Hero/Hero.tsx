@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import styles from './HeroStyles.module.css';
 import heroImg from '../../assets/hero-img.png';
 import sun from '../../assets/sun.svg';
@@ -20,7 +20,7 @@ function Hero() {
   const githubIcon = theme === 'light' ? githubLight : githubDark;
   const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
 
-  // Roles to cycle through
+
   const roles = ['Full-Stack Developer', 'UI/UX Designer', 'Software Engineer', 'ML/AI Engineer'];
   const [currentRole, setCurrentRole] = useState('');
   const [roleIndex, setRoleIndex] = useState(0);
@@ -40,31 +40,27 @@ function Hero() {
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
-      }, index * 100); // slight delay for each file
+      }, index * 100);
     });
   };
 
-  // Typing effect logic
+
   useEffect(() => {
     let timeout:number;
     if (isTyping) {
       if (currentRole.length < roles[roleIndex].length) {
-        // Typing effect
         timeout = setTimeout(() => {
           setCurrentRole(prev => prev + roles[roleIndex][prev.length]);
         }, typingSpeed);
       } else {
-        // Wait after typing complete
         timeout = setTimeout(() => setIsTyping(false), delayBetweenRoles);
       }
     } else {
       if (currentRole.length > 0) {
-        // Erasing effect
         timeout = setTimeout(() => {
           setCurrentRole(prev => prev.slice(0, -1));
         }, erasingSpeed);
       } else {
-        // Switch to the next role
         setIsTyping(true);
         setRoleIndex((prevIndex) => (prevIndex + 1) % roles.length);
       }
@@ -84,7 +80,7 @@ function Hero() {
         <div className={styles.wrapper}>
           <h2 className={styles.typingContainer}>
             <span>{currentRole}</span>
-            <span className={styles.cursor}>&#124;</span> {/* Cursor symbol */}
+            <span className={styles.cursor}>&#124;</span>
           </h2>
         </div>
 
