@@ -1,0 +1,92 @@
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 10vw;
+  height: 100vh;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.info > * {
+    justify-content: center;
+    text-align: center;
+}
+
+.colorModeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.hero {
+  width: 28vw;
+  height: 28vw
+}
+
+
+.colorMode {
+    
+    width: 3vw;
+    height:3vw;
+}
+
+.socials > a > img {
+    width: 3.5vw;
+    height: 3.5vw;
+}
+
+.socials {
+    display: flex;
+    gap: 1.4vw;
+}
+
+
+.typingContainer {
+    font-family: monospace;
+    font-size: 2em;
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    width: 22ch;
+    padding-left: 20px;
+  }
+  
+  .cursor {
+    display: inline-block;
+    animation: blink 0.8s step-end infinite;
+    margin-left: 2px;
+  }
+  
+  .wrapper {
+    display: grid;
+    place-items: center;
+    height: 100px;
+  }
+  
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  button {
+    background-color: var(--btn-color);
+    color: var(--btn-text-color);
+    width: 10vw;
+    height: 3.7vw;
+    border-radius: 15px;
+    border:none;
+    font-size: 1.5vw;
+    font-family: 'Roboto Mono', monospace;
+    margin-top: 2vh;
+}

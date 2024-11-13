@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 100vh;
+}
+
+.tweet {
+    border-radius: 30px;
+}
+
+.title {
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+}
+
+.underline {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 4vw 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+button {
+    background-color: var(background-color);
+}
+
