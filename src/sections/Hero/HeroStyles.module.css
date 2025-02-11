@@ -88,12 +88,12 @@
     border-radius: 15px;
     border:none;
     font-size: 1.5vw;
-    font-family: 'Roboto Mono', monospace;
+   
     margin-top: 2vh;
 }
 
 @media (max-width: 500px) {
-  
+
   .container {
     flex-direction: column;
     gap: 8vw;
