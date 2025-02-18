@@ -9,9 +9,8 @@ import linkedinLight from '../../assets/linkedin-light.svg';
 import linkedinDark from '../../assets/linkedin-dark.svg';
 import githubLight from '../../assets/github-light.svg';
 import githubDark from '../../assets/github-dark.svg';
-import CV1 from '../../assets/ResumeSWE.pdf';
-import CV2 from '../../assets/ResumeML.pdf';
-import CV3 from '../../assets/ResumeFS.pdf';
+import CV1 from '../../assets/Resume.pdf';
+import CV2 from '../../assets/MLResume.pdf';
 import { useTheme } from '../../common/ThemeContext';
 
 function Hero() {
@@ -30,7 +29,7 @@ function Hero() {
   const erasingSpeed = 100;
   const delayBetweenRoles = 2000;
 
-  const files = [CV1, CV2, CV3];
+  const files = [CV1, CV2];
 
   const downloadFiles = () => {
     files.forEach((file, index) => {
