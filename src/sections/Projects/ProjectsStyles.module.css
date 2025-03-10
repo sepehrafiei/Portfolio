@@ -41,3 +41,10 @@ button {
     background-color: var(background-color);
 }
 
+@media (max-width: 500px) {
+
+    .container {
+        display: none;
+    }
+
+}

@@ -63,9 +63,51 @@ form textarea {
     color: var(--btn-text-color);
     border:none;
     box-shadow: 0 4px, 4px #00000040;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .footer {
     padding-top: 7vh;
     font-size: 1.3vw;
+}
+
+@media (max-width: 500px) {
+
+    .container {
+        margin-top: 20vh;
+    }
+
+    .title > *{
+        font-size: 8vw;
+    }
+
+    form {
+        gap: 3vh;
+    }
+
+    form * {
+        font-size: 4vw;
+        padding-left: 4vw;
+        width: 70vw;
+        border-radius: 15px;
+        
+    }
+    
+    form textarea {
+        height: 30vh;
+        padding-top:3vw;
+    }
+    
+    .submit {
+        width: 75vw;
+        height: 15vw;
+        border-radius: 10px;
+        font-size: 5vw;
+    }
+    
+    .footer {
+        padding-top: 4vh;
+        font-size: 2.5vw;
+    }
+
 }
