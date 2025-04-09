@@ -1,5 +1,5 @@
 .card {
-    background: linear-gradient(to bottom, var(--startg), var(--endg)); 
+    background: var(--background-color);
     display: flex;
     flex-direction: column;
     width: 20vw;
@@ -8,7 +8,7 @@
     padding: 3vw;
     transition: 0.4s ease-out;
     position: relative;
-    box-shadow: -0.5rem 0 0.5rem rgba(0, 0, 0, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     left: 0px;
     gap: 5%;
 

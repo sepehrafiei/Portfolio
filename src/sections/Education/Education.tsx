@@ -16,13 +16,13 @@ function Education() {
                     </div>
                     <h2>College of Engineering</h2>
                     <div className={styles.spacer}></div>
-                    <h3>Bachelor of Science: Electrical Engineering & Computer Science</h3>
+                    <h3 className={styles.degree}>Bachelor of Science: Electrical Engineering & Computer Science</h3>
                 </div>
                 <div className={styles.spacer}></div>
-                <h3><b>Relevant Coursework:</b></h3>
-                <p>SWE: Algorithms, Data Structures, Computer Architecture, Computer Security</p>
-                <p>Web-Dev: Full-Stack, Server-Side Development using PHP, Client-Side Web Development, Database Management, IOS Development, Figma</p>
-                <p>AI/ML: Machine Learning, Deep Learning for Visual Data, Designing Deep Neural Networks, Artificial Intelligence, Foundations of Data Science, Discrete Mathematics and Probability Theory</p>
+
+                <p><b>Software Engineering:</b> Algorithms, Data Structures, Computer Architecture, Computer Security</p>
+                <p><b>Web-Development:</b> Full-Stack Development, IOS Development, Figma</p>
+                <p><b>AI/Machine Learning:</b> Machine Learning, Deep Learning for Visual Data, Designing Deep Neural Networks, Artificial Intelligence, Foundations of Data Science, Discrete Mathematics and Probability Theory</p>
             </div>
             <div className={styles.BerkeleyLogo}>
                 <img className={styles.camp} src={camp} alt="" width="160px"/>
